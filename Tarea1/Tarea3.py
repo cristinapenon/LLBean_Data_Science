@@ -73,16 +73,19 @@ res = [lis[3] for lis in agenda_hospital]
 # printing result
 print("List with only nth tuple element (i.e names) : " + str(res))
 
+mayor=0
+menor=0
 for i in res:
    if i < 18:  # el if termina con : para indicar donde acaba la condición
     # el print va indentado con 4 espacios para indicar que está dentro del
     # cuerpo del if
       print("Menor")
+      menor
    else:
     #Lo mismo con este print
       print("Mayor")
 
-#Ejemplo en linea
+#APUNTES Ejemplo en linea de comparacion de 2 listas al mismo tiempo
 #a = (1, 2, 3)
 #b = (1, 4, 3)
 
