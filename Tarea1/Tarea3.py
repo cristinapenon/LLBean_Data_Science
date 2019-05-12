@@ -63,22 +63,24 @@ print('Ordenados de mayor a menor',sorted_by_fourth)
 
 #Cuarta Pregunta
 #Cuantos pacientes son mayores de edad? cuantos menores?
-#i=0
-#for b in agenda_hospital:
-#  if agenda_hospital[3] in agenda_hospital >18:
-#     i=i+1
-#print(i)
 
-x=list(zip(*agenda_hospital)[3])
-print(x)
+# printing original list
+print("The original list is : " + str(agenda_hospital))
 
-#if edad < 18:  # el if termina con : para indicar donde acaba la condición
+# using list comprehension to get names
+res = [lis[3] for lis in agenda_hospital]
+
+# printing result
+print("List with only nth tuple element (i.e names) : " + str(res))
+
+for i in res:
+   if i < 18:  # el if termina con : para indicar donde acaba la condición
     # el print va indentado con 4 espacios para indicar que está dentro del
     # cuerpo del if
-#    print("Menor")
-#else:
-    # Lo mismo con este print
-#   print("Mayor")
+      print("Menor")
+   else:
+    #Lo mismo con este print
+      print("Mayor")
 
 #Ejemplo en linea
 #a = (1, 2, 3)
