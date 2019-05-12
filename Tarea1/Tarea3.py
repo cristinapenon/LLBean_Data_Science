@@ -52,18 +52,48 @@ print('las personas que entraron por dolor fueron:',matching)
 #esto me indica quienes entraron por dolor
 print('la cantidad de personas que entraron por dolor fueron:',len(matching))
 
-
 #Tercera pregunta
 #Suponga que se atienden con orden de prioridad por edad, empezando por el adulto mayor. Ordene la lista desde el más adulto al más joven
 
+sorted_by_fourth = sorted(agenda_hospital, key=lambda tup: tup[3])
+print('Ordenados de menor a mayor',sorted_by_fourth)
 
-
+sorted_by_fourth = sorted(agenda_hospital, key=lambda tup: tup[3], reverse=True)
+print('Ordenados de mayor a menor',sorted_by_fourth)
 
 #Cuarta Pregunta
 #Cuantos pacientes son mayores de edad? cuantos menores?
+i=0
+#for b in agenda_hospital:
+#  if agenda_hospital[3] in agenda_hospital >18:
+#     i=i+1
+#print(i)
+
+x=zip(*agenda_hospital)[3]
+print(x)
+#if edad < 18:  # el if termina con : para indicar donde acaba la condición
+    # el print va indentado con 4 espacios para indicar que está dentro del
+    # cuerpo del if
+#    print("Menor")
+#else:
+    # Lo mismo con este print
+#   print("Mayor")
+
+#Ejemplo en linea
+#a = (1, 2, 3)
+#b = (1, 4, 3)
+
+#for idx, (i, j) in enumerate(zip(a, b)):
+#    if i == j:
+#        print(f'Index {idx} match: {i}')
+#    else:
+#        print(f'Index {idx} no match: {i} vs {j}')
+#        break
 
 #Quinta Pregunta
 #Suponga que se atienden con orden de prioridad por gravedad de consulta, empezando por los que tienen dolor y luego por edad (mas viejo al joven), empezando por el adulto mayor. Ordene la lista empenzando por los que tienen mayor prioridad.
+
+
 
 #Sexta pregunta
 #Suponga que los que tienen dolor mueren :( Como queda la lista de pacientes vivos por atender ordenados por orden de edad desde el joven al viejo.
