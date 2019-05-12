@@ -63,14 +63,15 @@ print('Ordenados de mayor a menor',sorted_by_fourth)
 
 #Cuarta Pregunta
 #Cuantos pacientes son mayores de edad? cuantos menores?
-i=0
+#i=0
 #for b in agenda_hospital:
 #  if agenda_hospital[3] in agenda_hospital >18:
 #     i=i+1
 #print(i)
 
-x=zip(*agenda_hospital)[3]
+x=list(zip(*agenda_hospital)[3])
 print(x)
+
 #if edad < 18:  # el if termina con : para indicar donde acaba la condición
     # el print va indentado con 4 espacios para indicar que está dentro del
     # cuerpo del if
