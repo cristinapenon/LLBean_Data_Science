@@ -4,22 +4,9 @@
 
 #usando el operador % para definir la cantidad de digitos decimales de PI y la cantidad de asteriscos.
 
-pie="3.1415926"
-listpie=list(pie)
-print(listpie)
-list3=listpie[:-1]
-list3+='*'
-print(list3)
+var_1= '******'
+var_2=3.1415962
 
-i=len(listpie)
-
-pie="3.1415926"
-for i in listpie:
-    x = listpie.replace(i, "*")
-    print(x)
-#    listpie += '*'
-   #listpie[-1]
-   #i= '*'
- #  print(listpie)
-
-
+#print('%.1s %.9s' % (var_1,var_2))
+#print('%.2s %.8s' % (var_1,var_2))
+print('%.1s %.9s, %.2s %.8s, %.3s %.7s, %.4s %.6s, %.5s %.5s, %.6s %.4s' % (var_1,var_2,var_1,var_2,var_1,var_2,var_1,var_2,var_1,var_2,var_1,var_2))
