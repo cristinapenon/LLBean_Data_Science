@@ -99,14 +99,24 @@ print('la cantidad de mayores de edad son:', mayor)
 #Quinta Pregunta
 #Suponga que se atienden con orden de prioridad por gravedad de consulta, empezando por los que tienen dolor y luego por edad (mas viejo al joven), empezando por el adulto mayor. Ordene la lista empenzando por los que tienen mayor prioridad.
 
+matching = [s for s in agenda_hospital if "dolor" in s]
+#print('las personas que entraron por dolor fueron:',matching)
+sort_edadydolor = sorted(matching, key=lambda tup: tup[3], reverse=True)
+#print(sort_edadydolor)
 
+matching2 = [s for s in agenda_hospital if not "dolor" in s]
+sort_edadyNOdolor = sorted(matching2, key=lambda tup: tup[3], reverse=True)
+#print(sort_edadyNOdolor)
 
-
-
-
+print("orden de prioridad para atender es:",sort_edadydolor,sort_edadyNOdolor)
 
 
 #Sexta pregunta
 #Suponga que los que tienen dolor mueren :( Como queda la lista de pacientes vivos por atender ordenados por orden de edad desde el joven al viejo.
 
+matching2 = [s for s in agenda_hospital if not "dolor" in s]
+sort_edadyNOdolor = sorted(matching2, key=lambda tup: tup[3], reverse=False)
+#print(sort_edadyNOdolor)
+
+print("orden de prioridad para atender de joven a viejo sin los de dolor son:",sort_edadyNOdolor)
 
