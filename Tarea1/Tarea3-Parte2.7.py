@@ -15,7 +15,16 @@ for x in range(cantidad):
 
 print("Esta es la lista original:",list)
 
-#sort = sorted(list, key=lambda tup: tup[3], reverse=True)
-sort = sorted(list, key=lambda tup: tup[1], reverse=False)
+def Remove(list):
+    final_list = []
+    for num in list:
+        if num not in final_list:
+            final_list.append(num)
+    return final_list
 
-print("Esta es la lista inversa:",sort)
+
+# Driver Code
+#duplicate = [2, 4, 10, 20, 5, 2, 20, 4]
+print("Esta es la lista sin duplicados:",Remove(list))
+
+#print("Esta es la lista sin duplicados:", list)

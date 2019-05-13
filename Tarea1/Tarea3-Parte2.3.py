@@ -5,7 +5,7 @@ if cantidad == 0:
     print("Imposible!")
 else:
     for x in range(cantidad):
-        nom=input("Dígame la palabra :")
+        nom=input("Dígame la palabra {}".format(x+1))
         nombres.append(nom)
 
 list=[]
