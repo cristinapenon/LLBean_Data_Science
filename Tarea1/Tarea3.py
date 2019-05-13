@@ -71,35 +71,42 @@ print("The original list is : " + str(agenda_hospital))
 res = [lis[3] for lis in agenda_hospital]
 
 # printing result
-print("List with only nth tuple element (i.e names) : " + str(res))
+#para revisar que solo la edad se estaba obteniendo
+#print("List with only nth tuple element (i.e names) : " + str(res))
 
 mayor=0
 menor=0
 for i in res:
    if i < 18:  # el if termina con : para indicar donde acaba la condición
-    # el print va indentado con 4 espacios para indicar que está dentro del
-    # cuerpo del if
-      print("Menor")
-      menor
+      menor=menor+1
    else:
-    #Lo mismo con este print
-      print("Mayor")
+      mayor=mayor+1
+print('la cantidad de menores de edad son:', menor)
+print('la cantidad de mayores de edad son:', mayor)
 
-#APUNTES Ejemplo en linea de comparacion de 2 listas al mismo tiempo
-#a = (1, 2, 3)
-#b = (1, 4, 3)
 
-#for idx, (i, j) in enumerate(zip(a, b)):
-#    if i == j:
-#        print(f'Index {idx} match: {i}')
-#    else:
-#        print(f'Index {idx} no match: {i} vs {j}')
-#        break
+                                #APUNTES Ejemplo en linea de comparacion de 2 listas al mismo tiempo
+                                #a = (1, 2, 3)
+                                #b = (1, 4, 3)
+
+                                #for idx, (i, j) in enumerate(zip(a, b)):
+                                #    if i == j:
+                                #        print(f'Index {idx} match: {i}')
+                                #    else:
+                                #        print(f'Index {idx} no match: {i} vs {j}')
+                                #        break
 
 #Quinta Pregunta
 #Suponga que se atienden con orden de prioridad por gravedad de consulta, empezando por los que tienen dolor y luego por edad (mas viejo al joven), empezando por el adulto mayor. Ordene la lista empenzando por los que tienen mayor prioridad.
 
 
 
+
+
+
+
+
 #Sexta pregunta
 #Suponga que los que tienen dolor mueren :( Como queda la lista de pacientes vivos por atender ordenados por orden de edad desde el joven al viejo.
+
+
