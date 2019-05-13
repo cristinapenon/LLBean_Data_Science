@@ -18,10 +18,12 @@ y = input("Diga cual palabra sustituir :")
 z= input("por esta palabra :")
 
 #txt = nombres.replace(y, z)
-words=[]
+
 for i in list:
     if i == y:
-        i = z
+      #  i = z
+        #x = list.replace(i, z)
+        list = [item.replace(i, z) for item in list]
     #list.insert(i,z)
       #words = [list.replace(i) for z in list]
 
