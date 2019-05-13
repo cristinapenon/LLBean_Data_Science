@@ -21,7 +21,7 @@ for i in list:
     if i == y:
         #list = [item.replace(i, z) for item in list]
         b = list.index(i)
-        del list[b]
+        list.pop(b)
        #list.insert(i,z)
       #words = [list.replace(i) for z in list]
 
