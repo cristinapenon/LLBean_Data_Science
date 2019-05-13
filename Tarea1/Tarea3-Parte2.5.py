@@ -1,11 +1,12 @@
 cantidad=input("Dígame cuántas palabras tiene la lista:")
+stringcantidad=str(cantidad)
 cantidad=int(cantidad)
 nombres=[]
 if cantidad == 0:
     print("Imposible!")
 else:
     for x in range(cantidad):
-        nom=input("Dígame la palabra :")
+        nom=input("Dígame la palabra  :")
         nombres.append(nom)
 
 list=[]
