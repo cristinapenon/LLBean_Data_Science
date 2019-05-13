@@ -1,5 +1,4 @@
 cantidad=input("Dígame cuántas palabras tiene la lista:")
-stringcantidad=str(cantidad)
 cantidad=int(cantidad)
 nombres=[]
 if cantidad == 0:

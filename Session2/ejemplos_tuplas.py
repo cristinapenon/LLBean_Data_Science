@@ -16,7 +16,7 @@ mi_tupla +=(0,'x') # += es para acumular
 print(mi_tupla)
 
 #subtupla
-# del segundo hasta ek penultimo
+# del segundo hasta el penultimo
 print(mi_tupla[1:-1]) # e; ] de al final es exluyente
 #si quisiera todos hacia el final es no poner al final
 print(mi_tupla[1:])
