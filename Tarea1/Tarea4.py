@@ -30,17 +30,21 @@ print(b[1])
 #Parte 1
 #Contruya un diccionario de funciones matematicas (utilizando funciones lambda) entre todos los números de la lista tales como:
 #Promedio
-promedio=lambda sum(x)/len(x)
+promedio =list(map(lambda x: sum(x)/len(x), b[1])
 #La suma
-sumar = lambda x,y: x+y
+sumar = list(map(lambda x,y: x+y, b[1]))
 #La multiplicación
-mult= lambda x,y: x*y
-dict = {sumar,mult,promedio}
+mult= list(map(lambda x,y: x*y, b[1]))
+diccionario = {'func1':"lala",'func2':mult,'func3':promedio}
 
 #Parte 2
 #Obtenga utilizando el diccionario de funciones:
 
 #1. El promedio de la cantidad miles de colones en débito: cuánto tienen en promedio todas las personas.
+#midict[func3]
+#llamada (conj de parametros-o lista)
+
+print(diccionario['func1'])
 
 #2. La suma de todas las deudas
 
