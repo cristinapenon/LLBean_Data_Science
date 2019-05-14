@@ -19,7 +19,8 @@ print(b)
 # [3.64, 4.64, 1.64]]
 #Por otro lado, se puede aplicar matemática o cualquier otra operación a alguna fila en específico. Por ejemplo: dividir todos los números entre 10. Obteniendo:
 
-b[1] = list(map(lambda x: x/10, b[1]))
+#ejemplo de profe
+#b[1] = list(map(lambda x: x/10, b[1]))
 print(b[1])
 #b
 #[['carlos', 'juan', 'luis'],
@@ -30,12 +31,19 @@ print(b[1])
 #Parte 1
 #Contruya un diccionario de funciones matematicas (utilizando funciones lambda) entre todos los números de la lista tales como:
 #Promedio
-promedio =list(map(lambda x: sum(x)/len(x), b[1])
+promedio =lambda x: sum(x)/len(x)
 #La suma
-sumar = list(map(lambda x,y: x+y, b[1]))
+sumar = lambda x: sum(x)
+
 #La multiplicación
-mult= list(map(lambda x,y: x*y, b[1]))
-diccionario = {'func1':"lala",'func2':mult,'func3':promedio}
+mult= lambda x,y,z: x*y*z
+
+#impuesto
+
+imp=list(map(lambda x: x*1.2, b[2]))
+
+#[a*b for a,b in zip(lista_creditos, )]
+diccionario = {'func1': sumar,'func2': mult,'func3': promedio,'func4':imp}
 
 #Parte 2
 #Obtenga utilizando el diccionario de funciones:
@@ -44,14 +52,21 @@ diccionario = {'func1':"lala",'func2':mult,'func3':promedio}
 #midict[func3]
 #llamada (conj de parametros-o lista)
 
-print(diccionario['func1'])
+a=diccionario['func3'](b[1])
+print("Este es el promedio:",a)
 
 #2. La suma de todas las deudas
 
+h = diccionario['func1'](b[2])
+print("Esta es la suma de deudas:", h)
+
 #3. la multiplicación de todos los crédito entre si
 
-
+c = diccionario['func2'](b[3][0],b[3][1],b[3][2])
+print("Esta es la multiplicacion de creditos:", c)
 
 #Parte 3
 #Actualice (en la tabla general)los valores de los créditos aplicando un impuesto del 20%
 # (esto es multiplicar por 1.2) a toda la fila de créditos usando el diccionario de funciones.
+d = diccionario['func4']
+print("Estos son los creditos *1.2:", d)
