@@ -28,10 +28,16 @@
 #DictPacientes={"identificación":identificación,"Nombre":Nombre,"Apellido":Apellido,"Tel":Tel,"Dirección":Dirección,"listaenfermedades":listaenfermedades, "listamed":listamed}
 #print(DictPacientes)
 
-
-#dictpact={'identificación':114380418,'Nombre':Cristina,'Apellido':Penon,'Tel':1234,'Dirección':SantaAna,'listaenfermedades':[tunel,dolor de cabeza], 'listamed':[acetaminofen]}
+d={}
 dictpact1={'identificación':114380418,'Nombre':'Cristina','Apellido':'Penon','Tel':1234,'Dirección':'Santa Ana','listaenfermedades':['tunel','dolor de cabeza'], 'listamed':['acetaminofen']}
 dictpact2={'identificación':112320312,'Nombre':'Monica','Apellido':'Penon','Tel':7896,'Dirección':'San Francsico','listaenfermedades':['dolor de estomago'], 'listamed':['jarabe']}
-dictpact3={'identificación':113051813,'Nombre':'Margarita','Apellido':'Baudrit','Tel':8526,'Dirección':'San Jose','listaenfermedades':['diabetes','migrañas'], 'listamed':['insulina','']}
+dictpact3={'identificación':113051813,'Nombre':'Margarita','Apellido':'Baudrit','Tel':8526,'Dirección':'San Jose','listaenfermedades':['diabetes','migrañas'], 'listamed':['insulina','botox']}
 
-print(dictpact)
+
+print(dictpact1)
+print(dictpact2)
+print(dictpact3)
+
+pacientes = {1: dictpact1, 2: dictpact2, 3:dictpact3}
+
+print(pacientes)
