@@ -10,7 +10,6 @@
 #lista de medicamentos que toma
 
 #Operaciones:
-
 #Ingreso de un paciente nuevo
 #Borrado de un paciente
 #Agregar más enfermedades en un paciente en particular
@@ -33,11 +32,31 @@ dictpact1={'identificación':114380418,'Nombre':'Cristina','Apellido':'Penon','T
 dictpact2={'identificación':112320312,'Nombre':'Monica','Apellido':'Penon','Tel':7896,'Dirección':'San Francsico','listaenfermedades':['dolor de estomago'], 'listamed':['jarabe']}
 dictpact3={'identificación':113051813,'Nombre':'Margarita','Apellido':'Baudrit','Tel':8526,'Dirección':'San Jose','listaenfermedades':['diabetes','migrañas'], 'listamed':['insulina','botox']}
 
-
 print(dictpact1)
 print(dictpact2)
 print(dictpact3)
 
-pacientes = {1: dictpact1, 2: dictpact2, 3:dictpact3}
+pacientes = {114380418: dictpact1, 112320312: dictpact2, 113051813:dictpact3}
 
 print(pacientes)
+
+#ingreso de un paciente nuevo
+pacientes[214580418] = {'identificación':214580418,'Nombre':'Andres','Apellido':'Hernandez','Tel':1874,'Dirección':'Santa Ana','listaenfermedades':['dolor de estomago','dolor muscular'], 'listamed':['voltaren','jarabe']}
+
+print(pacientes)
+
+#borrar 1 paciente
+del pacientes[114380418]
+print(pacientes)
+
+#Agregar más enfermedades en un paciente en particular
+pacientes.update(113051813('listaenfermedades'):['diabetes','migrañas','embarazo'])
+
+pacientes[113051813] = 113051813['listaenfermedades'].update('embarazo')
+print(pacientes)
+#dict1.update({'c': 4})
+
+#Agregar más medicamentos en un paciente en particular
+#Generar reporte de las enfermedades tratadas en la clínica
+#Generar reporte de los medicamentos entregados en la clínica
+#Comparar 2 pacientes en particular: cuales enfermedades tienen en común. Cuales no?. Lo mismo con los medicamentos.
