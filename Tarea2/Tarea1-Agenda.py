@@ -75,3 +75,10 @@ print(mylist)
 
 #Comparar 2 pacientes en particular: cuales enfermedades tienen en común. Cuales no?. Lo mismo con los medicamentos.
 
+#comparar enfermedades
+
+
+#comparar medicamentos
+
+
+
