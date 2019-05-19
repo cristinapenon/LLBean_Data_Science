@@ -88,6 +88,8 @@ print('en paciente 1 y 2',a & b)
 # Letras en a o en b pero no en ambos
 print('en paciente 1 o en paciente 2 pero no en ambos', a ^ b)
 
+
+
 #comparar medicamentos
 a = set(pacientes[112320312]['listamed'])
 b = set(pacientes[113051813]['listamed'])
