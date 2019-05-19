@@ -50,13 +50,18 @@ del pacientes[114380418]
 print(pacientes)
 
 #Agregar más enfermedades en un paciente en particular
-pacientes.update(113051813('listaenfermedades'):['diabetes','migrañas','embarazo'])
 
-pacientes[113051813] = 113051813['listaenfermedades'].update('embarazo')
+dictpact4={'identificación':113051813,'Nombre':'Margarita','Apellido':'Baudrit','Tel':8526,'Dirección':'San Jose','listaenfermedades':['diabetes','migrañas','embarazo'], 'listamed':['insulina','botox']}
+pacientes[113051813].update(dictpact4)
 print(pacientes)
-#dict1.update({'c': 4})
 
 #Agregar más medicamentos en un paciente en particular
+dictpact2={'identificación':112320312,'Nombre':'Monica','Apellido':'Penon','Tel':7896,'Dirección':'San Francsico','listaenfermedades':['dolor de estomago'], 'listamed':['jarabe','clorotrimeton','alergodex']}
+pacientes[112320312].update(dictpact2)
+print(pacientes)
+
 #Generar reporte de las enfermedades tratadas en la clínica
+
 #Generar reporte de los medicamentos entregados en la clínica
+
 #Comparar 2 pacientes en particular: cuales enfermedades tienen en común. Cuales no?. Lo mismo con los medicamentos.
