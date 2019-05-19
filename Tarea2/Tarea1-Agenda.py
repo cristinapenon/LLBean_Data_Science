@@ -50,7 +50,6 @@ del pacientes[114380418]
 print(pacientes)
 
 #Agregar más enfermedades en un paciente en particular
-
 dictpact4={'identificación':113051813,'Nombre':'Margarita','Apellido':'Baudrit','Tel':8526,'Dirección':'San Jose','listaenfermedades':['diabetes','migrañas','embarazo'], 'listamed':['insulina','botox']}
 pacientes[113051813].update(dictpact4)
 print(pacientes)
@@ -61,7 +60,17 @@ pacientes[112320312].update(dictpact2)
 print(pacientes)
 
 #Generar reporte de las enfermedades tratadas en la clínica
+p=[]
+for person in pacientes:
+    p= p+pacientes[person]['listaenfermedades']
+    mylist=list(dict.fromkeys(p))
+print(mylist)
 
+#    GoT = ['Tony', 'Rocket', 'Scott', 'Steve', 'Rocket', 'Natasha', 'Tony']
+#    mylist = list(dict.fromkeys(GoT))
+#    print(mylist)
 #Generar reporte de los medicamentos entregados en la clínica
 
+
 #Comparar 2 pacientes en particular: cuales enfermedades tienen en común. Cuales no?. Lo mismo con los medicamentos.
+
