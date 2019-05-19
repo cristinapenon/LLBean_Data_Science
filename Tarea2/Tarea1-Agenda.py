@@ -66,11 +66,12 @@ for person in pacientes:
     mylist=list(dict.fromkeys(p))
 print(mylist)
 
-#    GoT = ['Tony', 'Rocket', 'Scott', 'Steve', 'Rocket', 'Natasha', 'Tony']
-#    mylist = list(dict.fromkeys(GoT))
-#    print(mylist)
 #Generar reporte de los medicamentos entregados en la clínica
-
+m=[]
+for person in pacientes:
+    m= m+pacientes[person]['listamed']
+    mylist=list(dict.fromkeys(m))
+print(mylist)
 
 #Comparar 2 pacientes en particular: cuales enfermedades tienen en común. Cuales no?. Lo mismo con los medicamentos.
 
