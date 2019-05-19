@@ -76,21 +76,30 @@ print(mylist)
 #Comparar 2 pacientes en particular: cuales enfermedades tienen en común. Cuales no?. Lo mismo con los medicamentos.
 
 #comparar enfermedades
-a = set(pacientes[112320312]['listaenfermeades'])
-b=  set(pacientes[113051813]['listaenfermedades'])
+a = set(pacientes[112320312]['listaenfermedades'])
+b = set(pacientes[113051813]['listaenfermedades'])
 
 # Letras en a pero no en b
 print('en paciente 1 pero no en 2',a - b)
-
 # letras en a o en b o en ambos
 print('en paciente 1, paciente 2, o ambos', a | b)
 # letras en a y en b
-print('en paciente 1 y2',a & b)
-
+print('en paciente 1 y 2',a & b)
 # Letras en a o en b pero no en ambos
 print('en paciente 1 o en paciente 2 pero no en ambos', a ^ b)
 
 #comparar medicamentos
+a = set(pacientes[112320312]['listamed'])
+b = set(pacientes[113051813]['listamed'])
+
+# Letras en a pero no en b
+print('en paciente 1 pero no en 2',a - b)
+# letras en a o en b o en ambos
+print('en paciente 1, paciente 2, o ambos', a | b)
+# letras en a y en b
+print('en paciente 1 y 2',a & b)
+# Letras en a o en b pero no en ambos
+print('en paciente 1 o en paciente 2 pero no en ambos', a ^ b)
 
 
 
